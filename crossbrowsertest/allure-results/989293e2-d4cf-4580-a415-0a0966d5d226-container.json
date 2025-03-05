@@ -1,0 +1,1 @@
+{"uuid":"989293e2-d4cf-4580-a415-0a0966d5d226","name":"crossbrowsertest.BaseTest.setUp","children":["5b5b37ee-aa6f-4acc-8dd8-01319589f9ae"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1740561713629,"stop":1740561715650}],"afters":[],"start":1740561713629,"stop":1740561715650}
