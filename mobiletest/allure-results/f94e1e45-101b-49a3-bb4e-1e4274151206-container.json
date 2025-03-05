@@ -1,0 +1,1 @@
+{"uuid":"f94e1e45-101b-49a3-bb4e-1e4274151206","name":"mobiletest.medstore.setup","children":["a0f76acb-22b4-4fe3-8bc0-ddd43d5bd649"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1738656206986,"stop":1738656273408}],"afters":[],"start":1738656206986,"stop":1738656273408}

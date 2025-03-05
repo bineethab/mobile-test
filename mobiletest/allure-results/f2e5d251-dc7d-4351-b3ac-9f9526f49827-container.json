@@ -1,0 +1,1 @@
+{"uuid":"f2e5d251-dc7d-4351-b3ac-9f9526f49827","name":"mobiletest.medstore.tearDown","children":["490ef5c4-5ff1-441c-942d-ec0ab7cdcffd"],"description":"","befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1738645576688,"stop":1738645577562}],"start":1738645576688,"stop":1738645577562}
