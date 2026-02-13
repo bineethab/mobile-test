@@ -1,0 +1,1 @@
+{"uuid":"ddd97a14-cb1d-4f94-8416-72436d46b54d","name":"ddcparallel.Chrome.setUp","children":["8de0eb49-773d-43ff-954b-d61e2151e0d6"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1740541859783,"stop":1740541863317}],"afters":[],"start":1740541859783,"stop":1740541863317}

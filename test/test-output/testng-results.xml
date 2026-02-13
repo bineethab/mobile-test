@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-03T09:20:41 IST" name="Suite" finished-at="2023-05-03T09:21:00 IST" duration-ms="19300">
+    <groups>
+    </groups>
+    <test started-at="2023-05-03T09:20:41 IST" name="Test" finished-at="2023-05-03T09:21:00 IST" duration-ms="19300">
+      <class name="test.Paralleltest2">
+        <test-method signature="ProductsSearchByCategory()[pri:0, instance:test.Paralleltest2@942a29c]" started-at="2023-05-03T09:20:41 IST" name="ProductsSearchByCategory" finished-at="2023-05-03T09:20:51 IST" duration-ms="10432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductsSearchByCategory -->
+      </class> <!-- test.Paralleltest2 -->
+      <class name="test.Paralleltest">
+        <test-method signature="ProductsSearchByCategory()[pri:0, instance:test.Paralleltest@229c6181]" started-at="2023-05-03T09:20:51 IST" name="ProductsSearchByCategory" finished-at="2023-05-03T09:21:00 IST" duration-ms="8835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductsSearchByCategory -->
+      </class> <!-- test.Paralleltest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

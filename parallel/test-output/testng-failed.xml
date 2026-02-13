@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="parallel.Edge">
+        <methods>
+          <include name="IngredientsAdd"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="IngredientsEdit"/>
+        </methods>
+      </class> <!-- parallel.Edge -->
+      <class name="parallel.FirefoxTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="BrandEdit"/>
+        </methods>
+      </class> <!-- parallel.FirefoxTest -->
+      <class name="parallel.ChromeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="IngredientsEdit"/>
+          <include name="IngredientsAdd"/>
+        </methods>
+      </class> <!-- parallel.ChromeTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

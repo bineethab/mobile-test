@@ -1,0 +1,1 @@
+{"uuid":"c28d394c-1eff-491a-906a-9b6970011c09","name":"mobtestddc.Mobtest","children":["e2a0b812-7316-4609-94a4-22a5c24483d5"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1706073797583,"stop":1706073817162}],"afters":[],"start":1706073797560,"stop":1706073820720}

@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
+<record>
+  <date>2025-05-12T08:06:41.682248500Z</date>
+  <millis>1747037201682</millis>
+  <nanos>248500</nanos>
+  <sequence>2</sequence>
+  <logger>ddclabs.DDCfrontend</logger>
+  <level>INFO</level>
+  <class>ddclabs.DDCfrontend</class>
+  <method>careers</method>
+  <thread>1</thread>
+  <message>Processing data from the Excel sheet</message>
+</record>
+<record>
+  <date>2025-05-12T08:06:41.694216700Z</date>
+  <millis>1747037201694</millis>
+  <nanos>216700</nanos>
+  <sequence>3</sequence>
+  <logger>ddclabs.DDCfrontend</logger>
+  <level>INFO</level>
+  <class>ddclabs.DDCfrontend</class>
+  <method>careers</method>
+  <thread>1</thread>
+  <message>name is entered</message>
+</record>
 </log>

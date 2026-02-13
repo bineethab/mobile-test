@@ -1,0 +1,1 @@
+{"uuid":"08f1cdff-14f3-49f5-8c9a-bcdbe54386dd","name":"ddcparallel.Edge.setUp","children":["8a0fdbb3-4858-4f60-b48f-0be91aa52581"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1740470516760,"stop":1740470521003}],"afters":[],"start":1740470516760,"stop":1740470521003}

@@ -1,0 +1,1 @@
+{"uuid":"465792d1-a348-45f5-86dc-76a3da8503f0","name":"ddcparallel.Firefox.setUp","children":["4948d92d-786e-4cc9-87d2-b7c18a35a530"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1740472615218,"stop":1740472632640}],"afters":[],"start":1740472615218,"stop":1740472632640}

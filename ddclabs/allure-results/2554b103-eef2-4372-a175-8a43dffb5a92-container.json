@@ -1,0 +1,1 @@
+{"uuid":"2554b103-eef2-4372-a175-8a43dffb5a92","name":"ddcparallel.BaseTest.setUp","children":["c20ac788-973f-4b28-b801-33fe17307c8d"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1719806547684,"stop":1719806547684}],"afters":[],"start":1719806547684,"stop":1719806547684}

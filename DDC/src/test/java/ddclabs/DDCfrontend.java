@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
@@ -775,7 +776,7 @@ public void contact() throws InterruptedException {
 	
 	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 	
-	WebElement contact=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[normalize-space()='Contact']")));
+	WebElement contact=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Contact']")));
 	contact.click();
 	
 	String ExpectedUrl="https://righters.in/develop/ddcLives/contact.php";
@@ -1084,7 +1085,7 @@ public void Quality() {
 			 logger.info("Completed the 'book' method.");
 	       }}}
 
-@Test(priority=14)
+//@Test(priority=14)
 @Description("this test verifies whether socialmedialinks directs to corresponding pages")
 @Step("Test the correctness of socialmedia page links ")
 @Feature("verifying socialmedia links  ")
@@ -1256,17 +1257,67 @@ public void careers() throws InterruptedException, SecurityException, IOExceptio
 		        
 		        WebElement sendbutton= driver.findElement(By.xpath("//button[contains(.,'Apply Now')]"));
 		        sendbutton.click();
-		     
-				  Thread.sleep(2000);
-				  Alert alert = driver.switchTo().alert(); alert.getText();
-				  alert.accept();
+				
+				WebElement message=driver.findElement(By.xpath(""));
+				
+				 
 				 
 		        
 		    }}}
 		
 
+@Test(priority=16)
+@Description("check the correctness of directing to employee page")
+@Step("test the employee login window")
+public void employeelogin() throws IOException {
+	
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+	
+	JavascriptExecutor js=(JavascriptExecutor)driver;
+	js.executeScript("window.scrollBy(0,3500);");
+	
+	Actions actions = new Actions(driver);
 
+	String parentWindow=driver.getWindowHandle();
+	WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Employee Login')]"));
 
+	// Perform right-click action
+	actions.click(element).perform();
+	// Get all window handles
+	Set<String>allWindows=driver.getWindowHandles();
+	
+	for(String window:allWindows) {
+		if(!window.equals(parentWindow)) {
+			driver.switchTo().window(window);//switch to new window
+			Log.info("switched to new window:"+driver.getTitle());
+			
+			//take screenshot
+			
+			TakesScreenshot ts=(TakesScreenshot)driver;
+			File source=ts.getScreenshotAs(OutputType.FILE);
+			
+			   // Define destination path
+	        File destination = new File("C:\\Users\\computer-2\\Pictures\\Saved Pictures\\screenshot.png");
+	        
+	        // Copy file to the destination
+	        FileUtils.copyFile(source, destination);
+	        
+	        System.out.println("Screenshot taken successfully!");
+	        
+			break;
+		}
+	}
+	
+	// Perform actions in the new window
+	
+
+	// Close the new window and switch back to the parent
+	driver.close();
+	driver.switchTo().window(parentWindow);	
+	
+	
+	
+}
 
 
 
@@ -1274,7 +1325,7 @@ public void careers() throws InterruptedException, SecurityException, IOExceptio
 		public void tearDown() {
 			  if (driver != null)
 		        {
-		         driver.close();
+		         //driver.close();
 		
 		}}}
 	

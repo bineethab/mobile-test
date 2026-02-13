@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mobiletest.medstore">
+      <class name="mobiletest.Medstoreapp">
         <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="SearchOption"/>
+          <include name="addtocartbutton"/>
+          <include name="pagecorrectness"/>
+          <include name="proddetails"/>
+          <include name="brands"/>
+          <include name="setUp"/>
+          <include name="LoginValidations"/>
         </methods>
-      </class> <!-- mobiletest.medstore -->
+      </class> <!-- mobiletest.Medstoreapp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
